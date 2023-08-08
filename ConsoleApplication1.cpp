@@ -19,7 +19,7 @@ int main()
 
 	std::cout << "Выходные данные: ";
 	auto namber = v_arr.begin();
-	std::for_each(v_arr.begin(), v_arr.end(), [&namber](const int& n) { if (1 == n % 2) { *namber = n * 3; } ++namber; });
+	std::for_each(v_arr.begin(), v_arr.end(), [&namber](int n) { if (1 == n % 2) { *namber = n * 3; } ++namber; });
 	std::for_each(v_arr.begin(), v_arr.end(), [](const int& n) { std::cout << n << " "; });
 	std::cout << std::endl;
 
